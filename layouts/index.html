@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+
+{{ partial "header.html" . }}
+
+<body>
+    <div class="content" id="content">
+        {{ partial "top-bar.html" . }}
+      <p>These are some of the robots I've worked on recently, including some pictures and videos. Hope you enjoy!</p>
+
+            {{ $pag := .Paginate (where .Data.Pages "Type" "project") }}
+            <div class="container no-padding"><div class="row">
+                
+            {{ range $pag.Pages }}
+                {{ partial "project-stub.html" . }}
+            {{ end }}
+                </div></div>
+        </div>
+    </div>
+</body>
+
+</html>

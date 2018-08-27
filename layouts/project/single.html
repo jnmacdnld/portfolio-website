@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "header.html" . }}
+
+<body>
+<div class="content" id="content">
+{{ partial "project-nav.html" . }}
+
+<h2>{{ .Title }}</h2>
+{{ if .Params.highlights }}
+
+<h3>My Contribution Highlights</h3>
+<ul>
+  {{ range .Params.highlights }}
+  <li>{{ . }}</li>
+{{ end }}
+</ul>
+{{ end }}
+
+{{ if .Params.media  }}
+<div class="container-fluid media-gallery-container">
+  <div id="myCarousel" class="carousel slide media-gallery"
+    data-ride="carousel" data-interval=false>
+    <div class="carousel-inner row w-100 mx-auto">
+        {{ range $i, $e := .Params.media }}
+        <div class="carousel-item col-md-4
+        {{ if eq $i 0 }}
+          active 
+        {{ end }}
+          ">
+          <div class="card">
+            {{ if (eq $e.type "video") }}
+              <iframe width="{{ .width }}" height="{{ .height }}" src="{{ .src }}" frameborder="0" allowfullscreen  allow="autoplay; encrypted-media" ></iframe>
+            {{ else }}
+              <img class="card-img-top img-fluid" src="/images/{{ .src }}"
+            height=600>
+            {{ end }}
+            <div class="card-body">
+              {{ if .caption }}
+              <p class="card-text">{{ .caption }}</p>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+    </div>
+
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+{{ end }}
+
+<h3>Project Info</h3>
+<ul>
+  {{ with .Params.info }}
+    <li>Robot Type: {{ .robot_type }}</li>
+    <li>Application: {{ .application }}</li>
+  {{ end }}
+  <li>Organization: 
+    {{ with .Params.org }}
+      {{ if .link }} 
+        <a href="{{ .link }}"> 
+      {{ end }}
+      {{ .name }}
+      {{ if .link }} 
+        </a> 
+      {{ end }}
+
+      {{ if .github }} 
+        (<a href="{{ .github }}">GitHub</a>)
+      {{ end }}
+    {{ end }}
+  
+  </li>
+  {{ with .Params.personal }}
+    <li>Personal Role: {{ .role }}, {{ .timeframe }}</li>
+  {{ end }}
+</ul>
+
+{{ if .Content }}
+
+<h3>More About My Experience</h3>
+<p>
+  {{ .Content }}
+
+</p>
+{{ end }}
+
+{{ partial "project-nav.html" . }}
+
+    </div>
+</body>
+
+</html>
+

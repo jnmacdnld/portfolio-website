@@ -1,0 +1,145 @@
+/* Sidebar */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    max-width: 100%;
+}
+
+.project-info {
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+td.label {
+    color: rgba(0,0,0,0.65);
+}
+
+.project-info tr {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.project-info td {
+    padding: 5px 10px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.card, .card-img-top {
+    border-radius: 0 !important;
+}
+
+.portfolio-item .card:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+.portfolio-item a {
+    color: black !important;
+}
+
+.portfolio-item .card:active, .portfolio-item:active h3 {
+    background: #007bff  !important;
+    color: white !important;
+}
+
+.portfolio-item a:hover {
+    text-decoration: none !important;
+}
+
+.card h3 {
+    text-decoration: none;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+.fluid_container {
+	max-width: 800px;
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 800px)  {
+    body {
+        font-size: 14pt;
+    }
+    h1 {
+        font-size: 2em
+    }
+    h2 {
+
+    }
+    .content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    p {
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow: auto;
+    }
+
+    video { width: 100% !important }
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Raleway', 'sans-serif';
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+iframe, video {
+    margin-top: 1em;
+}
+
+ul {
+    margin-top: 0.2em;
+}
+
+h1 {
+    font-size: 2.5em !important;
+    font-weight: bold !important;
+    font-family: Raleway, sans-serif !important;
+}
+
+
+h2 {
+    font-size: 2em !important;
+    font-weight: bold !important;
+    font-family: Raleway, sans-serif !important;
+}
+
+
+h3 {
+    font-size: 1.5em !important;
+    font-weight: normal !important;
+    font-family: Raleway, sans-serif !important;
+}
+
+h4 {
+    font-size: 1em !important;
+    font-weight: normal !important;
+    font-family: Raleway, sans-serif !important;
+}
+
+.subtitle {
+    font-size: 1em;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+h1.title {
+    font-size: 3em !important;
+    font-weight: bold;
+}
+
+.carosel .card {
+    width: 800px;
+}

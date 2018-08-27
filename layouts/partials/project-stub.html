@@ -1,0 +1,19 @@
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <a href="{{ .Permalink }}">
+    <div class="card h-100">
+        <img class="card-img-top" 
+          {{ if .Params.thumb }}
+             src="/images/{{ .Params.thumb.img }}" 
+          {{ else }}
+             src="http://placehold.it/700x400"
+          {{ end }}
+        alt="">
+      <div class="card-body">
+        <h3 class="card-title">
+          {{ .Title }}
+        </h3>
+        <p class="card-text">{{ .Params.thumb.description }}</p>
+      </div>
+    </div>
+    </a>
+  </div>
