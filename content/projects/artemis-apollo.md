@@ -93,5 +93,5 @@ EM from upgraded thrusters and
 center of mass. With the work the team did over
 the summer, we managed to place first in RoboSub 2017. We achieved a
 semi-finals score which was higher than the next best team by a factor
-of ten, which was truly incredible. I was priveleged to have such a great team. Seeing both vehicles working
+of more than two, which was truly incredible. I was priveleged to have such a great team. Seeing both vehicles working
 flawlessly in paralell was a moment I will never forget.      
