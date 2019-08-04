@@ -6,8 +6,6 @@
   <link rel="stylesheet" href="/css/3-col-portfolio.css" type="text/css">
   <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-
   <link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet">
 
   <script type='text/javascript' src='/js/jquery.min.js'></script>
@@ -35,13 +33,13 @@
   <link rel='stylesheet' href='/css/carosel.css' type='text/css' media='all'> 
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109652169-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Params.google_analytics_id }}"></script>
   <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 
-	gtag('config', 'UA-109652169-1');
+  gtag('config', '{{ .Params.google_analytics_id }}');
   </script>
 </head>
 

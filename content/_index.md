@@ -9,4 +9,6 @@ social_links:
   link: https://twitter.com/jnmacdnld
 - name: LinkedIn
   link: https://www.linkedin.com/in/john-joseph-macdonald/
+
+google_analytics_id: UA-109652169-1
 ---

@@ -10,7 +10,7 @@
         <p>{{ .Params.tagline }}</p>
             <div class="container no-padding"><div class="row">
                 
-            {{ range (where .Data.Pages "Type" "project").ByPublishDate.Reverse }}
+            {{ range (where .Data.Pages "Type" "project").ByWeight }}
                 {{ partial "project-stub.html" . }}
             {{ end }}
                 </div></div>
