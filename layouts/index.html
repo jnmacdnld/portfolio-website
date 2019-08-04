@@ -7,12 +7,10 @@
 <body>
     <div class="content" id="content">
         {{ partial "top-bar.html" . }}
-      <p>These are some of the robots I've worked on recently, including some pictures and videos. Hope you enjoy!</p>
-
-            {{ $pag := .Paginate (where .Data.Pages "Type" "project") }}
+        <p>{{ .Params.tagline }}</p>
             <div class="container no-padding"><div class="row">
                 
-            {{ range $pag.Pages }}
+            {{ range (where .Data.Pages "Type" "project").ByPublishDate.Reverse }}
                 {{ partial "project-stub.html" . }}
             {{ end }}
                 </div></div>

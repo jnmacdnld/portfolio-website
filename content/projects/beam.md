@@ -10,6 +10,7 @@ thumb:
 highlights:
 - Transformed the novel Social Momentum algorithm from equations and MatLab simulations to Python code running in real-time on a BeamPro robot with ROS Kinetic, enabling navigation with socially desirable collision avoidance behaviors
 - Designed and implemented framework for socially aware navigation algorithms, enabling future comparison of arbitrary algorithms including OCRA, Social Force, and Social Momentum running in real-time on a robot   
+- Paper on comparison of social navigation algorithms using the framework accepted to HRI 2019
 
 info:
   robot_type: Two-Wheeled Mobile Indoor Robot
@@ -51,7 +52,8 @@ media:
 I spent my senior year of undergrad working in the Robotic Personal Asisstants
 Lab on the socially competent navigation project. My role was to move the
 project from a set of simulations running in Matlab to Python code running on a
-ROS robot in real-time. I designed a system which enabled modular swapping of 
+ROS robot in real-time. I designed and implemented an architecure which enabled 
+modular swapping of 
 different person perception and social navigation algorithms in order to gauge
 real-world performance. 
 
@@ -65,9 +67,10 @@ framework
 in order to suit the platform being used.
 
 I also implemented the lab's novel Social Momentum algorithm inside this
-framework, as well as ORCA using the RVO library in order to demonstrate the
+framework, as well as Optimal Reciprocal Collision Avoidance (ORCA) using the RVO library in order to demonstrate the
 interopability of the framework, as well as to enable comparison between
 different algorithms.
 
-The project is currently using the framework I designed in order to run a
-series of in-lab experiements with people to evaluate the algorithm performance.
+The social navigation framework which I designed and implemented was used to
+conduct experiments on social navigation, the results of which were summarised
+in a paper accepted to HRI 2019.

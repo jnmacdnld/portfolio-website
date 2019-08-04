@@ -56,4 +56,5 @@ media:
     Visualization of the robot telemetry in rviz. Blue points near the
     tracked_person coordinate frame are particles from the particle filter;
     other points are 3D points from the depth sensor.
+
 ---

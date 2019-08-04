@@ -1,7 +1,6 @@
 /* Sidebar */
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12pt;
+    font-family: 'Roboto', sans-serif !important;
     max-width: 100%;
 }
 
