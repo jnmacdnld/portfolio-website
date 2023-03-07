@@ -7,10 +7,12 @@
 <body>
     <div class="content" id="content">
         {{ partial "top-bar.html" . }}
-        <p>{{ .Params.tagline }}</p>
+        <p>
+            {{ partial "description.html" . }}
+        </p>
             <div class="container no-padding"><div class="row">
                 
-            {{ range (where .Data.Pages "Type" "project").ByWeight }}
+            {{ range (where .Site.RegularPages "Type" "project").ByWeight }}
                 {{ partial "project-stub.html" . }}
             {{ end }}
                 </div></div>

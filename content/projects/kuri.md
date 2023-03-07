@@ -2,6 +2,7 @@
 title: Kuri
 type: project
 date: 2018-05-00T11:13:20+00:00
+weight: 10
 
 thumb:
   description: 
