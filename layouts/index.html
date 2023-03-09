@@ -7,9 +7,7 @@
 <body>
     <div class="content" id="content">
         {{ partial "top-bar.html" . }}
-        <p>
             {{ partial "description.html" . }}
-        </p>
             <div class="container no-padding"><div class="row">
                 
             {{ range (where .Site.RegularPages "Type" "project").ByWeight }}
